@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../public/css/font.scss";
+/* @import 'aos/dist/aos.css';
+@import 'animate.css'; */
+
+$m-width-Desktop: 1440px;
+$m-width-Laptop: 1200px;
+$m-width-Tablet: 768px;
+$m-width-Mobile: 300px;
+
+
+
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  background-color: #141d2f;
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00BEE8;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 190, 232, 0.8);
+}
+
+#portfolio, #contact{
+  scroll-margin-top: 100px;
+}
+
+#contact{
+  scroll-margin-top: 100px;
+}
+
+#about-me {
+  scroll-margin-top: 100px;
+}
+
+#skills {
+  display: flex;
+  scroll-margin-top: 100px;
+}
+
+@media screen and (max-width: 480px) {
+  #skills {
+    scroll-margin-top: 35px;
+  }
+  #portfolio{
+    scroll-margin-top: 60px;
+  }
+  
+}
